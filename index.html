@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./navBar.css">
+    <title>gSheet</title>
+</head>
+
+<body>
+
+    <div id="top-bar">
+       <!--
+        leftmost - icon
+        left (2) - upper part - name of sheet
+                    lower part - menus -> file, edit, tools, help. 
+        right side - donate me
+                    - profile detail
+                    - share option            
+        --> 
+        <div id="menu-bar">
+            <div id="left-menu-bar">
+                <div id="logo"><img src="./Assets/spreadsheet.png" alt="" srcset=""></div>
+            <div id="menu-holder">
+                <div id="sheet-name" contenteditable="true">Untitled Sheet</div>
+                <div id="menus">
+                    <ul>
+                        <li>File</li>
+                        <li>edit</li>
+                        <li>tools</li>
+                        <li>help</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div id="right-menu-bar">
+                <div><img src="./Assets/support.png" alt="support" ></div>
+                <div><img src="./Assets/share.png" alt="share" ></div>
+                <div><img src="./Assets/profile.png" alt="profile" ></div>
+            </div>
+
+        </div>
+
+        <!-- feature - cell color,font style, font size, text indent, text align,text color, bold, italic,underline, format as currency,  format as percentage  -->
+        <div id="tool-bar">
+            
+                <ul>
+                    <li><img src="./Assets/cell-color.png" alt="Cell color" srcset="" id="cell-color"></li>
+                    <li><img src="./Assets/font-style.png" alt="font Style" srcset="" id="font-style"></li>
+                    <li><img src="./Assets/font-size.png" alt="font size" id="font-size"></li>
+                    <li><img src="./Assets/text-indent.png" alt="text indent" id="text-indent"></li>
+                    <li><img src="./Assets/text-align.png" alt="text align" id="text-align"></li>
+                    <li><img src="./Assets/text-color.png" alt="text color" id="text-color"></li>
+                    <li><img src="./Assets/bold.png" alt="bold" id="bold"></li>
+                    <li><img src="./Assets/italic.png" alt="italic" id="italic"></li>
+                    <li><img src="./Assets/underline-text.png" alt="underline" id="underline"></li>
+                    <li><img src="./Assets/rupee-indian.png" alt="format as currency" id="currency"></li>
+                    <li><img src="./Assets/percentage.png" alt="format as percentage" id="percentage"></li>
+                </ul>
+            
+        </div>
+
+        <div id="formula-bar">
+            <div id="display-cell-ID" contenteditable="true"></div>
+            <div id="formula-div">
+                <!-- <div contenteditable="true"><img src="./Assets/formula.png" alt="" srcset=""></div> -->
+                 <div contenteditable="true" id="formula-content" onfocus="formulaIMG()" ></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="table-container">
+    </div>
+
+    <div id="footer-bar">
+        <div id="sheet-container" >
+            <div id="sheet-number">1</div>
+            <button type="button" id="add-sheet"><p>+</p></button>
+        </div>
+        <div class="trademark">
+            @made By Ajeet
+        </div>
+        
+    </div>
+
+
+
+    <!-- script tags -->
+     <script src="./functionality.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

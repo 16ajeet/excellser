@@ -1,0 +1,130 @@
+.border-test {
+    border: 1px solid paleturquoise;
+}
+
+#menu-bar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-inline-start: 1vw;
+    padding-inline-end: 2vw;
+}
+
+#left-menu-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#logo{
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+#logo > img{
+    width: 66px;
+    margin-top: 0.3rem;
+}
+
+#sheet-name{
+    font-size: 2.3rem;
+}
+
+
+#menus>ul{
+    display: flex;
+    gap: 3rem;
+    margin-top: 0.1rem;
+    text-transform: uppercase;
+}
+
+#right-menu-bar{
+    display: flex;
+    gap: 2rem;
+}
+
+#right-menu-bar > div > img{
+    width: 2rem;
+}
+
+#tool-bar{
+    height: 5vh;
+    background-color: aliceblue;
+}
+
+#tool-bar > ul{
+    display: flex;
+    gap: 2.5rem;
+    margin-left: 2.5rem;
+    height: 100%;
+}
+
+#tool-bar > ul > li{
+    height: 100%;
+    width: 2rem;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tool-bar > ul > li:hover{
+    background-color: rgb(201, 200, 200);
+    transition: 0.3s;
+}
+
+#tool-bar > ul > li > img {
+    height: 70%;
+    width: 1.2rem;
+}
+
+#formula-bar {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin: 0.1vw 1vw;
+}
+
+#display-cell-ID{
+    flex:0.5;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 26px;
+    font-size: larger;
+    padding-top: 2px;
+}
+
+#formula-div{
+    position: relative;
+    flex: 2.5;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#formula-div>div{
+    padding-top: 2px;
+    font-size: 18px;
+    padding-left: 0.5rem;
+    background-image: url('./Assets/formula.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+#formula-content:focus {
+    outline: none;
+    background-image: none;
+}
+
+/* #formula-div>div>img{
+    position: absolute;
+    width: 20px;
+    top: 3px;
+    opacity: 0.4;
+
+} */
+
